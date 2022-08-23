@@ -14,8 +14,8 @@ const Navbar = () => {
               <a
                 className={` shadow-lg flex justify-center flex-col p-2 rounded-lg items-center  ${
                   router.pathname == "/"
-                    ? "bg-pink-600 text-white bg-opacity-100"
-                    : "text-pink-500 bg-slate-200 bg-opacity-20  hover:bg-pink-600 hover:bg-opacity-100 hover:text-white"
+                    ? "bg-[#063A8D] text-white bg-opacity-100"
+                    : "text-[#429BEC] bg-slate-200 bg-opacity-20  hover:bg-[#063A8D] hover:bg-opacity-100 hover:text-white"
                 }`}
               >
                 <span className="text-xl mb-1">
@@ -32,8 +32,8 @@ const Navbar = () => {
               <a
                 className={` shadow-lg flex justify-center flex-col p-2 rounded-lg items-center  ${
                   router.pathname == "/portfolio"
-                    ? "bg-pink-600 text-white bg-opacity-100"
-                    : "text-pink-500 bg-slate-200 bg-opacity-20  hover:bg-pink-600 hover:bg-opacity-100 hover:text-white"
+                    ? "bg-[#063A8D] text-white bg-opacity-100"
+                    : "text-[#429BEC] bg-slate-200 bg-opacity-20  hover:bg-[#063A8D] hover:bg-opacity-100 hover:text-white"
                 }`}
               >
                 <span className="text-xl mb-1">
@@ -50,8 +50,8 @@ const Navbar = () => {
               <a
                 className={` shadow-lg flex justify-center flex-col p-2 rounded-lg items-center  ${
                   router.pathname == "/contact"
-                    ? "bg-pink-600 text-white bg-opacity-100"
-                    : "text-pink-500 bg-slate-200 bg-opacity-20  hover:bg-pink-600 hover:bg-opacity-100 hover:text-white"
+                    ? "bg-[#063A8D] text-white bg-opacity-100"
+                    : "text-[#429BEC] bg-slate-200 bg-opacity-20  hover:bg-[#063A8D] hover:bg-opacity-100 hover:text-white"
                 }`}
               >
                 <span className="text-xl mb-1">
@@ -68,8 +68,8 @@ const Navbar = () => {
               <a
                 className={` shadow-lg flex justify-center flex-col p-2 rounded-lg items-center  ${
                   router.pathname == "/contact"
-                    ? "bg-pink-600 text-white bg-opacity-100"
-                    : "text-pink-500 bg-slate-200 bg-opacity-20  hover:bg-pink-600 hover:bg-opacity-100 hover:text-white"
+                    ? "bg-[#063A8D] text-white bg-opacity-100"
+                    : "text-[#429BEC] bg-slate-200 bg-opacity-20  hover:bg-[#063A8D] hover:bg-opacity-100 hover:text-white"
                 }`}
               >
                 <span className="text-xl mb-1">

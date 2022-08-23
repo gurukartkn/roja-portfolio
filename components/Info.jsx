@@ -9,16 +9,16 @@ import {
 
 const Info = () => {
   return (
-    <div className="col-span-12 lg:col-span-4 lg:sticky top-44 h-max shadow-lg rounded-2xl bg-slate-50 bg-opacity-10">
+    <div className="col-span-12 lg:col-span-4 lg:sticky top-44 h-max shadow-lg rounded-2xl bg-white">
       <div className="w-full mb-6 lg:mb-0 mx-auto relative text-center px-6 lg:mt-0">
         <div className="pb-8">
-          <h2 className="mt-6 mb-1 text-[26px] xl:text-5xl font-semibold text-white">
+          <h2 className="mt-6 mb-1 text-[26px] xl:text-5xl font-semibold text-[#063A8D]">
             Roja
           </h2>
-          <h3 className="mb-4 text-white inline-block xl:text-xl px-5 py-1.5 rounded-lg ">
+          <h3 className="mb-4 text-[#429BEC] inline-block xl:text-xl px-5 py-1.5 rounded-lg ">
             Front End Developer
           </h3>
-          <div className="flex justify-center gap-5 bg-white bg-opacity-20 text-2xl w-max p-5 rounded-2xl ">
+          <div className="flex justify-center gap-5 bg-[#F3F9FF] shadow-md text-2xl w-max p-5 rounded-2xl ">
             <a
               href="https://www.linkedin.com/"
               target="_blank"
@@ -65,7 +65,7 @@ const Info = () => {
               </span>
             </a>
           </div>
-          <div className="p-7 rounded-2xl mt-7 bg-[#F3F6F6] bg-opacity-20">
+          <div className="p-7 rounded-2xl mt-7 bg-[#F3F9FF] shadow-md">
             <div className="flex border-b border-[#E3E3E3]  pb-2.5">
               <span className="text-[#E93B81] text-xl bg-white text-center items-center flex p-2 rounded-lg bg-opacity-30">
                 <i>
@@ -100,7 +100,7 @@ const Info = () => {
               </div>
             </div>
           </div>
-          <button className="bg-cyan-600 bg-opacity-80 p-3 rounded-2xl mt-3 font-medium text-white">
+          <button className="bg-[#063A8D] p-3 rounded-2xl mt-3 font-medium shadow-md text-white">
             Download CV
           </button>
         </div>

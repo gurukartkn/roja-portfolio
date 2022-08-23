@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="text-white p-5">
+    <div className="text-[#429BEC] p-5">
       © 2022 All Rights Reserved by{" "}
       <Link href="/">
-        <a className="text-pink-600 font-bold">Roja.</a>
+        <a className="text-[#063A8D] font-bold">Roja.</a>
       </Link>
     </div>
   );

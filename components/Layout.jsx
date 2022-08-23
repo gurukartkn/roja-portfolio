@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen p-2 bg-gradient-to-tl from-pink-400 via-cyan-300 to-violet-400 flex flex-col justify-center items-center">
+    <div className="min-h-screen p-2 bg-[#F3F9FF] flex flex-col justify-center items-center text-black">
       <Header />
       <div className="container grid grid-cols-12 md:gap-10 justify-between">
         <Info />
