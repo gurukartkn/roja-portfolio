@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { About, Works, Contact, Skills } from "../components";
+import { Contents } from "../components";
 
 export default function Home() {
   return (
@@ -13,10 +13,7 @@ developing front end applications."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <About />
-      <Works />
-      <Contact />
-      <Skills />
+      <Contents />
     </div>
   );
 }

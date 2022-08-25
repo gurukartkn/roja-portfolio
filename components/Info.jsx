@@ -9,7 +9,7 @@ import {
 
 const Info = () => {
   return (
-    <div className="col-span-12 lg:col-span-4 lg:sticky top-44 h-max shadow-lg rounded-2xl bg-white">
+    <div className="col-span-12 lg:col-span-4 top-44 h-max shadow-lg rounded-2xl bg-white">
       <div className="w-full mb-6 lg:mb-0 mx-auto relative text-center px-6 lg:mt-0">
         <div className="pb-8">
           <h2 className="mt-6 mb-1 text-[26px] xl:text-5xl font-semibold text-[#063A8D]">
@@ -18,6 +18,7 @@ const Info = () => {
           <h3 className="mb-4 text-[#429BEC] inline-block xl:text-xl px-5 py-1.5 rounded-lg ">
             Front End Developer
           </h3>
+
           <div className="flex justify-center gap-5 bg-[#F3F9FF] shadow-md text-2xl w-max p-5 rounded-2xl ">
             <a
               href="https://www.linkedin.com/"
@@ -48,7 +49,7 @@ const Info = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="text-[#e14a84]">
+              <span className="text-black">
                 <i>
                   <FaGithub />
                 </i>
@@ -100,9 +101,11 @@ const Info = () => {
               </div>
             </div>
           </div>
-          <button className="bg-[#063A8D] p-3 rounded-2xl mt-3 font-medium shadow-md text-white">
-            Download CV
-          </button>
+          <a href="/resume.pdf" target="_blank" rel="noreferrer">
+            <button className="bg-[#063A8D] p-3 rounded-2xl mt-3 font-medium shadow-md text-white">
+              Download CV
+            </button>
+          </a>
         </div>
       </div>
     </div>

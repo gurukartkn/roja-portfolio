@@ -24,21 +24,24 @@ const About = () => {
           and NextJs.
         </p>
       </div>
-      <div className="pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14">
+      <div className="pt-5 md:py-5 px-2 sm:px-5 md:px-10 lg:px-14">
         <h2 className="text-xl lg:text-3xl mb-3 font-bold text-[#429BEC]">
           What I do
         </h2>
         <div className="flex gap-5 justify-between flex-wrap">
           {abouts.map((about) => (
-            <div className="flex flex-col max-w-[100px]" key={about.title}>
-              <Image
+            <div
+              className="flex flex-col items-center justify-center gap-2"
+              key={about.title}
+            >
+              <img
                 src={urlFor(about.imgUrl)}
                 alt={about.title}
-                width={75}
-                height={75}
-                className="rounded-xl"
+                className="rounded-xl h-36"
               />
-              <h3>{about.title}</h3>
+              <h3 className="text-[#063A8D] lg:text-lg font-semibold">
+                {about.title}
+              </h3>
             </div>
           ))}
         </div>

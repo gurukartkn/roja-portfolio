@@ -1,16 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import RojaPic from "../public/assets/roja.png";
+import RojaPic from "../public/assets/rose.png";
 
 const Header = () => {
   return (
-    <div className="container lg:sticky top-0 py-5">
-      <div className="w-max shadow-md rounded-2xl bg-white flex justify-between px-4">
+    <div className="container py-5">
+      <div className="w-max shadow-md rounded-2xl bg-white flex justify-between p-4">
         <Link href="/">
           <a className="flex gap-2 items-center">
-            <Image src={RojaPic} alt="logo" width={100} height={100} />
-            <h1 className="text-3xl font-bold text-[#063A8D]">Roja</h1>
+            <h1 className="text-3xl font-bold text-[#429BEC]">
+              R
+              <Image src={RojaPic} alt="logo" width={25} height={25} />
+              ja
+            </h1>
           </a>
         </Link>
       </div>
