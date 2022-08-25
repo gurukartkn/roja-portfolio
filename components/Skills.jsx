@@ -4,17 +4,7 @@ import { motion } from "framer-motion";
 
 import { client, urlFor } from "../utils/sanity";
 
-const Skills = () => {
-  const [skills, setSkills] = useState([]);
-
-  useEffect(() => {
-    const skillsQuery = '*[_type == "skills"]';
-
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
-    });
-  }, []);
-
+const Skills = ({ skills }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8, y: -100 }}
