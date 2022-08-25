@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { motion } from "framer-motion";
+
 import { client } from "../utils/sanity";
 
 const Contact = () => {
@@ -38,9 +40,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="shadow-lg rounded-2xl bg-white">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8, y: -100 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.25 }}
+      className="shadow-lg rounded-2xl bg-white dark:bg-opacity-5"
+    >
       <div className="py-12 px-2 sm:px-5 md:px-10 lg:px-14 flex flex-col items-center gap-3">
-        <h2 className="text-xl lg:text-3xl mb-3 font-bold text-[#429BEC]">
+        <h2 className="font-poppins text-xl lg:text-3xl mb-3 font-bold text-[#429BEC] dark:text-white">
           Take a coffee & chat with me
         </h2>
 
@@ -48,7 +55,7 @@ const Contact = () => {
           <div className="flex flex-col gap-4">
             <div className="flex">
               <input
-                className="p-2 rounded-lg shadow-md bg-[#F3F9FF] md:w-96"
+                className="p-2 rounded-lg shadow-inner bg-[#F3F9FF] dark:bg-opacity-5 md:w-96"
                 type="text"
                 placeholder="Your Name"
                 name="username"
@@ -58,7 +65,7 @@ const Contact = () => {
             </div>
             <div className="flex">
               <input
-                className="p-2 rounded-lg shadow-md bg-[#F3F9FF] md:w-96"
+                className="p-2 rounded-lg shadow-inner bg-[#F3F9FF] dark:bg-opacity-5 md:w-96"
                 type="email"
                 placeholder="Your Email"
                 name="email"
@@ -68,7 +75,7 @@ const Contact = () => {
             </div>
             <div>
               <textarea
-                className="p-2 rounded-lg shadow-md bg-[#F3F9FF] md:w-96 h-36"
+                className="p-2 rounded-lg shadow-inner bg-[#F3F9FF] dark:bg-opacity-5 md:w-96 h-36"
                 placeholder="Your Message"
                 value={message}
                 name="message"
@@ -77,7 +84,7 @@ const Contact = () => {
             </div>
             <button
               type="button"
-              className="bg-[#063A8D] p-3 rounded-2xl mt-3 font-medium shadow-md text-white"
+              className="font-poppins bg-[#063A8D] dark:bg-[#FA58B6] p-3 rounded-2xl mt-3 font-medium shadow-md text-white"
               onClick={handleSubmit}
             >
               {!loading ? "Send Message" : "Sending..."}
@@ -85,13 +92,13 @@ const Contact = () => {
           </div>
         ) : (
           <div>
-            <h3 className="text-xl font-semibold text-center">
+            <h3 className="font-poppins text-xl font-semibold text-center">
               Thank you for getting in touch!
             </h3>
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

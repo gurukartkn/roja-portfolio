@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
+import { motion } from "framer-motion";
+
 import { urlFor, client } from "../utils/sanity";
 
 const Works = () => {
@@ -34,9 +36,14 @@ const Works = () => {
   };
 
   return (
-    <div className="shadow-lg rounded-2xl bg-white">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8, y: -100 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.25 }}
+      className="shadow-lg rounded-2xl bg-white dark:bg-[#1D1D42]"
+    >
       <div className="py-12 px-2 sm:px-5 md:px-10 lg:px-14">
-        <h2 className="text-xl lg:text-3xl mb-3 font-bold text-[#429BEC]">
+        <h2 className="font-poppins text-xl lg:text-3xl mb-3 font-bold text-[#429BEC] dark:text-white">
           My Works
         </h2>
         <div className="flex flex-wrap gap-2 md:gap-5 justify-end">
@@ -45,10 +52,10 @@ const Works = () => {
               <div
                 key={index}
                 onClick={() => handleWorkFilter(item)}
-                className={`p-2 rounded-2xl shadow-md cursor-pointer text-xs md:text-sm xl:text-base font-medium ${
+                className={`p-2 rounded-2xl shadow-inner cursor-pointer text-xs md:text-sm xl:text-base font-roboto ${
                   activeFilter === item
-                    ? "bg-[#063A8D] text-[#F3F9FF]"
-                    : "bg-[#F3F9FF] text-[#063A8D] "
+                    ? "bg-[#063A8D] dark:bg-[#FA58B6] text-[#F3F9FF] dark:text-white"
+                    : "bg-[#F3F9FF] dark:bg-opacity-5 text-[#063A8D] dark:text-slate-200"
                 }`}
               >
                 {item}
@@ -56,27 +63,31 @@ const Works = () => {
             )
           )}
         </div>
-        <div className="mt-5 flex flex-wrap justify-center gap-5">
+        <motion.div
+          animate={animateCard}
+          transition={{ duration: 0.5, delayChildren: 0.5 }}
+          className="mt-5 flex flex-wrap justify-center gap-5"
+        >
           {filterWork.map((work, index) => (
             <div
-              className="flex flex-col p-3 bg-[#F3F9FF] rounded-xl shadow-md min-w-[200px]"
+              className="flex flex-col p-3 bg-[#F3F9FF] dark:bg-[#1A1A40] rounded-xl shadow-inner min-w-[200px]"
               key={index}
             >
               <div className="flex flex-col gap-2">
                 <img
                   src={urlFor(work.imgUrl)}
                   alt={work.name}
-                  className="h-60 shadow-md rounded-2xl bg-white"
+                  className="h-60 shadow-md rounded-2xl bg-white dark:bg-opacity-5"
                 />
 
                 <div className=" flex justify-around">
                   <a href={work.projectLink} target="_blank" rel="noreferrer">
-                    <div className="text-2xl p-2 rounded-full bg-white shadow-md text-[#063A8D] hover:text-white hover:bg-[#063A8D]">
+                    <div className="text-2xl p-2 rounded-full bg-white dark:bg-opacity-5 shadow-md text-[#063A8D] dark:text-white hover:text-white hover:bg-[#063A8D]">
                       <AiFillEye />
                     </div>
                   </a>
                   <a href={work.codeLink} target="_blank" rel="noreferrer">
-                    <div className="text-2xl p-2 rounded-full bg-white shadow-md text-[#063A8D] hover:text-white hover:bg-[#063A8D]">
+                    <div className="text-2xl p-2 rounded-full bg-white dark:bg-opacity-5 shadow-md text-[#063A8D] dark:text-white hover:text-white hover:bg-[#063A8D]">
                       <AiFillGithub />
                     </div>
                   </a>
@@ -84,20 +95,24 @@ const Works = () => {
               </div>
 
               <div className="flex flex-col text-center mt-3 gap-2">
-                <h4 className="text-lg font-medium text-[#063A8D]">
+                <h4 className="font-poppins text-lg font-medium text-[#063A8D] dark:text-[#FA58B6]">
                   {work.title}
                 </h4>
-                <p className="text-[#429BEC]">{work.description}</p>
+                <p className="font-roboto font-thin text-[#429BEC] dark:text-slate-200">
+                  {work.description}
+                </p>
 
                 <div className="app__work-tag app__flex">
-                  <p className="text-[#429BEC]">{work.tags[0]}</p>
+                  <p className="font-roboto font-thin text-[#429BEC] dark:text-slate-200">
+                    {work.tags[0]}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
