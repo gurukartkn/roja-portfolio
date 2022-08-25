@@ -11,17 +11,10 @@ import Skills from "./Skills";
 const Contents = () => {
   const [state, setState] = useState("about");
   const [abouts, setAbouts] = useState([]);
-  const [skills, setSkills] = useState([]);
 
   useEffect(() => {
     const aboutQuery = '*[_type == "abouts"]';
     client.fetch(aboutQuery).then((data) => setAbouts(data));
-
-    const skillsQuery = '*[_type == "skills"]';
-
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
-    });
   }, []);
 
   return (
@@ -29,7 +22,7 @@ const Contents = () => {
       <Navbar state={state} setState={setState} />
       {state == "about" && <About abouts={abouts} />}
       {state == "works" && <Works />}
-      {state == "skills" && <Skills skills={skills} />}
+      {state == "skills" && <Skills />}
       {state == "contact" && <Contact />}
     </div>
   );
