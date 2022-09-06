@@ -77,7 +77,7 @@ const Works = () => {
                 <img
                   src={urlFor(work.imgUrl)}
                   alt={work.name}
-                  className="h-60 shadow-md rounded-2xl bg-white dark:bg-opacity-5"
+                  className="h-60 w-40 shadow-md rounded-2xl bg-white dark:bg-opacity-5"
                 />
 
                 <div className=" flex justify-around">
