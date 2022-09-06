@@ -47,7 +47,7 @@ const Works = () => {
           My Works
         </h2>
         <div className="flex flex-wrap gap-2 md:gap-5 justify-end">
-          {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+          {["UI/UX", "Web App", "React JS", "Next JS", "All"].map(
             (item, index) => (
               <div
                 key={index}
