@@ -70,7 +70,7 @@ const Works = () => {
         >
           {filterWork.map((work, index) => (
             <div
-              className="flex flex-col p-3 bg-[#F3F9FF] dark:bg-[#1A1A40] rounded-xl shadow-inner w-[200px]"
+              className="flex flex-col p-3 bg-[#F3F9FF] dark:bg-[#1A1A40] rounded-xl shadow-inner w-[280px]"
               key={index}
             >
               <div className="flex flex-col gap-2">
