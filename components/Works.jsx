@@ -40,7 +40,7 @@ const Works = () => {
       initial={{ opacity: 0, scale: 0.8, y: -100 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className="shadow-lg rounded-2xl bg-white dark:bg-[#1D1D42]"
+      className="shadow-lg rounded-2xl bg-white dark:bg-opacity-5"
     >
       <div className="py-12 px-2 sm:px-5 md:px-10 lg:px-14">
         <h2 className="font-poppins text-xl lg:text-3xl mb-3 font-bold text-[#429BEC] dark:text-white">
@@ -70,7 +70,7 @@ const Works = () => {
         >
           {filterWork.map((work, index) => (
             <div
-              className="flex flex-col p-3 bg-[#F3F9FF] dark:bg-[#1A1A40] rounded-xl shadow-inner min-w-[200px]"
+              className="flex flex-col p-3 bg-[#F3F9FF] dark:bg-[#1A1A40] rounded-xl shadow-inner w-[200px]"
               key={index}
             >
               <div className="flex flex-col gap-2">
