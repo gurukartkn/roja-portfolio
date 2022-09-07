@@ -103,7 +103,7 @@ const Works = () => {
                 </p>
 
                 <div className="app__work-tag app__flex">
-                  <p className="font-roboto font-thin text-[#429BEC] dark:text-slate-200">
+                  <p className="font-roboto font-thin text-[#063A8D] dark:text-[#FA58B6]">
                     {work.tags[0]}
                   </p>
                 </div>
