@@ -116,7 +116,10 @@ const Info = () => {
               </div>
             </div>
           </div>
-          <a href="/resume.pdf" target="_blank" rel="noreferrer">
+          <a href="http://bit.ly/3MWWTG5" target="_blank" rel="noreferrer">
+            {/* <button className="font-poppins bg-[#063A8D] dark:bg-[#FA58B6] p-3 rounded-2xl mt-3 font-medium shadow-md text-white">
+              Download CV
+            </button> */}
             <button className="font-poppins bg-[#063A8D] dark:bg-[#FA58B6] p-3 rounded-2xl mt-3 font-medium shadow-md text-white">
               Download CV
             </button>
