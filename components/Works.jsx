@@ -40,14 +40,14 @@ const Works = () => {
       initial={{ opacity: 0, scale: 0.8, y: -100 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className="shadow-lg rounded-2xl bg-white dark:bg-[#1D1D42]"
+      className="shadow-lg rounded-2xl bg-white dark:bg-opacity-5"
     >
       <div className="py-12 px-2 sm:px-5 md:px-10 lg:px-14">
         <h2 className="font-poppins text-xl lg:text-3xl mb-3 font-bold text-[#429BEC] dark:text-white">
           My Works
         </h2>
         <div className="flex flex-wrap gap-2 md:gap-5 justify-end">
-          {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+          {["UI/UX", "Web App", "React JS", "Next JS", "All"].map(
             (item, index) => (
               <div
                 key={index}
@@ -70,14 +70,14 @@ const Works = () => {
         >
           {filterWork.map((work, index) => (
             <div
-              className="flex flex-col p-3 bg-[#F3F9FF] dark:bg-[#1A1A40] rounded-xl shadow-inner min-w-[200px]"
+              className="flex flex-col p-3 bg-[#F3F9FF] dark:bg-[#1A1A40] rounded-xl shadow-inner w-[280px]"
               key={index}
             >
               <div className="flex flex-col gap-2">
                 <img
                   src={urlFor(work.imgUrl)}
                   alt={work.name}
-                  className="h-60 shadow-md rounded-2xl bg-white dark:bg-opacity-5"
+                  className="h-60 w-50 shadow-md rounded-2xl bg-white dark:bg-opacity-5"
                 />
 
                 <div className=" flex justify-around">
@@ -103,7 +103,7 @@ const Works = () => {
                 </p>
 
                 <div className="app__work-tag app__flex">
-                  <p className="font-roboto font-thin text-[#429BEC] dark:text-slate-200">
+                  <p className="font-roboto font-thin text-[#063A8D] dark:text-[#FA58B6]">
                     {work.tags[0]}
                   </p>
                 </div>

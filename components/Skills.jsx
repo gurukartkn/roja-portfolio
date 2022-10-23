@@ -10,7 +10,7 @@ const Skills = ({ skills }) => {
       initial={{ opacity: 0, scale: 0.8, y: -100 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className="shadow-lg rounded-2xl bg-white dark:bg-[#1D1D42]"
+      className="shadow-lg rounded-2xl bg-white dark:bg-opacity-5"
     >
       <div className="py-12 px-2 sm:px-5 md:px-10 lg:px-14">
         <h2 className="font-poppins text-xl lg:text-3xl mb-3 font-bold text-[#429BEC] dark:text-white">
