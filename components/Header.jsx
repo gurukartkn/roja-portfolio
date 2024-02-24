@@ -48,7 +48,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
       className="container py-5"
     >
-      <div className="w-full shadow-md rounded-2xl bg-white dark:bg-opacity-5 flex justify-between items-center p-4">
+      <div className="w-full sticky shadow-md rounded-2xl bg-white dark:bg-opacity-5 flex justify-between items-center p-4">
         <Link href="/">
           <a className="flex gap-2 items-center">
             <div className="flex text-3xl font-bold font-poppins text-[#429BEC] dark:text-[#FA58B6]">
