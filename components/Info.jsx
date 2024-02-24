@@ -27,7 +27,7 @@ const Info = () => {
 
           <div className="flex justify-center gap-5 bg-[#F3F9FF] dark:bg-[#1A1A40] shadow-inner text-2xl w-max p-5 rounded-2xl ">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/roja-p18/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -51,7 +51,7 @@ const Info = () => {
             </a>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/Roja1801/"
               target="_blank"
               rel="noopener noreferrer"
             >
