@@ -116,7 +116,7 @@ const Info = () => {
               </div>
             </div>
           </div>
-          <a href="http://bit.ly/3MWWTG5" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1xmILj5c7Gtc-wcDTomfnZex-8Xx_Fugl/view?usp=sharing" target="_blank" rel="noreferrer">
             {/* <button className="font-poppins bg-[#063A8D] dark:bg-[#FA58B6] p-3 rounded-2xl mt-3 font-medium shadow-md text-white">
               Download CV
             </button> */}
